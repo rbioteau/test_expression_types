@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition:ConnectorDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1">
+  <id>test-constant-adapter</id>
+  <version>1.0.0</version>
+  <input defaultValue="someValue" mandatory="true" name="stringInput" type="java.lang.String"/>
+  <input defaultValue="1" mandatory="true" name="longInput" type="java.lang.Long"/>
+  <input defaultValue="1" mandatory="true" name="floatInput" type="java.lang.Float"/>
+  <input defaultValue="1" mandatory="true" name="integerInput" type="java.lang.Integer"/>
+  <input defaultValue="1" mandatory="true" name="doubleInput" type="java.lang.Double"/>
+  <input name="localDateInput" type="java.time.LocalDate"/>
+  <output name="stringOuput" type="java.lang.String"/>
+  <output name="longOutput" type="java.lang.Long"/>
+  <page id="page">
+    <widget xsi:type="definition:Text" id="stringWidget" inputName="stringInput"/>
+    <widget xsi:type="definition:Text" id="longWidget" inputName="longInput"/>
+    <widget xsi:type="definition:Text" id="floatWidget" inputName="floatInput"/>
+    <widget xsi:type="definition:Text" id="doubleWidget" inputName="doubleInput"/>
+    <widget xsi:type="definition:Text" id="integerWidget" inputName="integerInput"/>
+    <widget xsi:type="definition:Text" id="localDateWidget" inputName="localDateInput"/>
+  </page>
+</definition:ConnectorDefinition>
